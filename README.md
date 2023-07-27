@@ -168,7 +168,7 @@ Quote Application
 ![Quote Application](images/quote.png)
 
 Current status of the CICD
-![CICD](images/cicd.png)
+![CICD](images/cicd-line.png)
 
 # 9  Monitoring and Logging
 ## 9.1  Jenkins Monitoring -  Cloudwatch 
