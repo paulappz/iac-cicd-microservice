@@ -58,7 +58,6 @@ packer validate template.json
 packer build template.json
 ```
 
-
 # 4. Create AWS resource with Terraform
 - Bastion server, Jenkins Master, Jenkins Worker, Private & Public RT,VPC, ALB,ECR Cloudwatch, Roles, Subnets, SonarQube, Anchore, 
  ```
@@ -167,6 +166,9 @@ service/quote-web           LoadBalancer   172.20.106.3     a8df6fc2c01324cbdbb1
 ```
 Quote Application
 ![Quote Application](images/quote.png)
+
+Current status of the CICD
+[CICD](images/cicd.png)
 
 # 9  Monitoring and Logging
 ## 9.1  Jenkins Monitoring -  Cloudwatch 
