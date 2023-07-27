@@ -5,7 +5,10 @@
 ```
 
 ## 1.2 Work flow
+CICD flow
 ![cicd flow](images/cicd-flow.png)
+ 
+ Microservice architecture
 ![microservice architecture](images/microservice.png)
 ## 1.3 Components
 Jenkins job, Jenkins build pipeline, Jenkins deploy pipeline  
@@ -64,17 +67,26 @@ terraform init
 terraform plan --var-file=variables.tfvars
 terraform apply --var-file=variables.tfvars -auto-approve
 ```
+Instances created
 ![Instances created](images/instances.png)
+
+Jenkins
 ![Jenkins ](images/jenkins.png)
 
 
 # 5. Setup Jenkins Job for the Microservices.
 ## 5.1 Create Jobs
+Jobs created
 ![Jobs created](images/jobs.png)
+
+Job
 ![job ](images/job.png)
 
 ## 5.2 Config credentials and system plugin integrations for sonarqube, anchore, slack, etc.
+Config credentials
 ![credentials](images/credentials.png)
+
+Plugin configurations
 ![plugin configurations](images/configure.png)
 
 # 6.  CI/CD
@@ -88,7 +100,7 @@ https://github.com/paulappz/quote-service.git
 https://github.com/paulappz/quote-web.git  t
 ```
 Build Steps -> Process Job  
-![build](images/build.png)
+![build](images/builds.png)
 
 - Read all branches of microservice repo  
   
@@ -101,7 +113,16 @@ Login ECR
 Push docker image into ECR  
 Anchore Analyzes image
 
-![build3](images/anchore.png) 
+
+Sonarqube scan
+![sonarqube](images/sonarqube.png) 
+
+Anchore
+![Anchore](images/anchore.png) 
+
+Slack Notifications
+## 3.2 Monitoring CICD Process with Slack
+![ slack](images/slack.png)
 
 # 7. Create EKS cluster
 Create Kubernetes cluster and node group, update kubeconfig.  
@@ -135,6 +156,9 @@ Build Steps -> Process Job
 ```
 ![kubectl](images/kubectl.png)
 
+Kubernetes Dashboard
+![Kubernetes Dashboard](images/dashbaord.png)
+
 ## 8.3 verify microservice from web browser AWS LB - 
 ```
 service/quote-api-gateway   LoadBalancer   172.20.201.46    a9cba872f2ce94a718d4b3fb110f1918-701423064.eu-west-2.elb.amazonaws.com   
@@ -145,16 +169,24 @@ service/quote-web           LoadBalancer   172.20.106.3     a8df6fc2c01324cbdbb1
 # 9  Monitoring and Logging
 ## 9.1  Jenkins Monitoring -  Cloudwatch 
 ![ Monitoring Cloudwatch ](images/cloudwatch.png)
-![ Monitoring Cloudwatch 2](images/cloudwatch2.png)
+![ Monitoring Cloudwatch2](images/cloudwatch2.png)
 
 ## 9.2  Jenkins Monitoring -  Telegraf, InfluxDB, Grafana
+Telegraf, InfluxDB, Grafana
 ![ Monitoring](images/jenkins-monitoring.png)
+
+Job build Metrics
 ![ Job build](images/job-builds.png)
+
+Cluster health Metrics
 ![ Cluster health](images/cluster-health.png)
 
 ## 9.2 Centralized logging for Jenkins logs with ELK
 ![ Centralized logging](images/logging.png)
+
+Kibana Dashboard
 ![ Kibana](images/kibana.png)
+
 
 # 10 Create S3 bucket and DynamoDB table for state management - 
 ```
