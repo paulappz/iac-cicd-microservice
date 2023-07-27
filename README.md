@@ -165,6 +165,8 @@ service/quote-api-gateway   LoadBalancer   172.20.201.46    a9cba872f2ce94a718d4
 service/quote-service       LoadBalancer   172.20.149.248   afedb7a71832f44fcbe9f7deb17bf299-1840045078.eu-west-2.elb.amazonaws.com   
 service/quote-web           LoadBalancer   172.20.106.3     a8df6fc2c01324cbdbb1e7a1b32d4c55-1946302828.eu-west-2.elb.amazonaws.com 
 ```
+Quote Application
+![Quote Application](images/quote.png)
 
 # 9  Monitoring and Logging
 ## 9.1  Jenkins Monitoring -  Cloudwatch 
