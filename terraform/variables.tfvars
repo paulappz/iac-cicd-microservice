@@ -1,0 +1,12 @@
+region=""
+shared_credentials_file=["/home/ubuntu/.aws/credentials"]
+aws_profile="default"
+author="Oluyege Paul"
+availability_zones = [""]
+public_key="./automate.pub"
+ssl_arn="arn:aws:acm:------"
+domain_name="abc.com"
+hosted_zone_id="ABCDEFGHIJKLMN"
+jenkins_username="admin"
+jenkins_password="root"
+jenkins_credentials_id="jenkins-slaves"
