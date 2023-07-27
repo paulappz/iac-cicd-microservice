@@ -157,7 +157,7 @@ Build Steps -> Process Job
 ![kubectl](images/kubectl.png)
 
 Kubernetes Dashboard
-![Kubernetes Dashboard](images/dashbaord.png)
+![Kubernetes Dashboard](images/dashboard.png)
 
 ## 8.3 verify microservice from web browser AWS LB - 
 ```
